@@ -40,4 +40,5 @@ Checkout the configurable Greeting on `hello-lwc`
 
 ```
 git checkout step-3
-sfdx force:source:push```
+sfdx force:source:push
+```
