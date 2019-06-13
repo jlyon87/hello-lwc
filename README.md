@@ -20,20 +20,24 @@ Mac: Run the script `./scripts/CreateOrg.sh`
 
 Checkout the Training App with the default Home Tab.
 
-`git checkout step-0`
-`sfdx force:source:push`
-
+```
+git checkout step-0
+sfdx force:source:push
+```
 Checkout the Created `hello-lwc` Web Component.
 
-`git checkout step-1`
-`sfdx force:source:push`
-
+```
+git checkout step-1
+sfdx force:source:push
+```
 Checkout the Surfaced Component in Training Home Tab.
 
-`git checkout step-2`
-`sfdx force:source:push`
-
+```
+git checkout step-2
+sfdx force:source:push
+```
 Checkout the configurable Greeting on `hello-lwc`
 
-`git checkout step-3`
-`sfdx force:source:push`
+```
+git checkout step-3
+sfdx force:source:push```
