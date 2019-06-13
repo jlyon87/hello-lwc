@@ -5,3 +5,5 @@ echo "*** Pushing metadata to scratch Org..."
 call sfdx force:source:push
 echo "*** Creating data from Account-Contact-plan.json"
 call sfdx force:data:tree:import -u hello-lwc -p ../data/Account-Contact-plan.json
+echo "*** Assigning TrainingApp Permission Set"
+call sfdx force:user:permset:assign -n TrainingApp -u hello-lwc
