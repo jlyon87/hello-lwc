@@ -32,6 +32,10 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
+            <componentInstanceProperties>
+                <name>greeting</name>
+                <value>Justin</value>
+            </componentInstanceProperties>
             <componentName>helloLwc</componentName>
         </componentInstances>
         <componentInstances>

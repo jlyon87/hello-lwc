@@ -6,4 +6,14 @@
   <targets>
     <target>lightning__HomePage</target>
   </targets>
+
+  <targetConfigs>
+    <targetConfig targets="lightning__HomePage">
+      <property
+        name="greeting"
+        label="Greeting Text"
+        type="String"
+        default="World" />
+    </targetConfig>
+  </targetConfigs>
 </LightningComponentBundle>
