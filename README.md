@@ -52,3 +52,9 @@ Refer to the following files to template any sfdx project from this hello-lwc ex
  * `./scripts/`
  * `.forceignore`
  * `.gitignore`
+
+ ## Sample /.vscode Settings
+
+ Refer to the `/_vscode/` folder for sample settings files. Copy these files to your local `/.vscode/` folder.
+
+ The `./_vscode/tasks.json` provides a handy Save All and push to default scratch org build command and a sample custom task to print your sfdx version and core plugins.
