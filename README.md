@@ -42,3 +42,11 @@ Checkout the configurable Greeting on `hello-lwc`
 git checkout step-3
 sfdx force:source:push
 ```
+
+## Project Template Examples
+
+Refer to the following files to template any sfdx project from this hello-lwc example:
+
+ * `./config/project-scratch-def.json`
+ * `./data/`
+ * `./scripts/`
