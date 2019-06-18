@@ -11,8 +11,8 @@ echo "Setting $1 to default scratch org..."
 sfdx force:config:set defaultusername=$1
 echo "Pushing source to $1..."
 sfdx force:source:push -u $1
-echo "Assigning permset to $1..."
-sfdx force:user:permset:assign -n GTR_Onboarding -u $1
+# echo "Assigning permset to $1..."
+# sfdx force:user:permset:assign -n Permset_Name -u $1
 # echo "Running initial Apex..."
 # sfdx force:apex:execute -f scripts/initialApex.apex
 #echo "Generate a Password for a Scratch Org User"
