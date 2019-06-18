@@ -50,3 +50,5 @@ Refer to the following files to template any sfdx project from this hello-lwc ex
  * `./config/project-scratch-def.json`
  * `./data/`
  * `./scripts/`
+ * `.forceignore`
+ * `.gitignore`
