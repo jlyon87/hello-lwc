@@ -1,4 +1,5 @@
 #!/bin/bash
+# Usage: sh scripts/deploy-mdtapi.sh
 
 # Import functions
 . ./scripts/lib/library.sh

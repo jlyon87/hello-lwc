@@ -1,4 +1,5 @@
 #!/bin/bash
+# Usage: sh scripts/create-org.sh
 
 # Import defaults
 . ./scripts/lib/defaults.sh
