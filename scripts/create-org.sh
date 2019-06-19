@@ -1,11 +1,12 @@
 #!/bin/sh
 
 # Import defaults
-. ./scripts/defaults.sh
+. ./scripts/lib/defaults.sh
 
 # Import functions
-. ./scripts/library.sh
+. ./scripts/lib/library.sh
 
 # Main script starts here
-scratchOrgName=$(prompt_string "Enter a name")
-create_org $scratchOrgName $duration $scratchDefPath $dataPath $permsetName
+scratchOrgName=$(prompt_string "Enter Scratch Org Name")
+init_scratch_org $scratchOrgName $scratchDefPath $dataPath $permsetName $duration
+
