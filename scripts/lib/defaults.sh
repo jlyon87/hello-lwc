@@ -1,8 +1,6 @@
 #!/bin/bash
 # Defaults
 
-projectRoot="c/Users/justin.lyon/documents/workspace/github/hello-lwc"
-
 duration=10
 scratchDefPath="config/project-scratch-def.json"
 dataPath="data/Account-Contact-plan.json"
