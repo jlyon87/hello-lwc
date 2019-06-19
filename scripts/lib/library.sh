@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Import Dependencies
 . ./scripts/lib/utilities.sh

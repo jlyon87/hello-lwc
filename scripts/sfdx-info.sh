@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Import functions
 . ./scripts/lib/library.sh

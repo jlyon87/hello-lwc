@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # myvar=$(prompt_string "message")
 prompt_string () {
