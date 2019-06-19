@@ -40,3 +40,18 @@ assign_permset () {
   echo "*** Assigning $2 Permission Set in $1"
   sfdx force:user:permset:assign -u $1 -n $2
 }
+
+convert_mdtapi () {
+  echo "Converting to mdapi package..."
+  outputRoot=${1:-mdtapi}
+  pkgName=${2:-unpackaged}
+
+  sfdx force:source:convert -d $outputRoot/$pkgName
+}
+
+deploy_mdtapi () {
+  outputRoot=${2:-mdtapi}
+  pkgName=${3:-unpackaged}
+
+  sfdx force:mdapi:deploy -d $outputRoot/$pkgName -u $1 -w 5
+}

@@ -17,3 +17,13 @@ init_scratch_org () {
   data_import $alias $dataPath
   assign_permset $alias $permsetName
 }
+
+convert_deploy_mdtapi () {
+  outputRoot=${2:-mdtapi}
+  pkgName=${3:-unpackaged}
+
+  convert_mdtapi $outputRoot $pkgName
+  deploy_mdtapi $1 $outputRoot $pkgName
+
+  rm -rf $outputRoot
+}
