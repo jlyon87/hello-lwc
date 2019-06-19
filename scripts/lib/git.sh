@@ -10,7 +10,7 @@ commit () {
   message=${1:-Auto Commit}
 
   git status
-  git add .
+  git add -A
   git commit -m $message
   git push
 }
