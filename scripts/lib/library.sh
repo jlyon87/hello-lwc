@@ -3,6 +3,7 @@
 # Import Dependencies
 . ./scripts/lib/utilities.sh
 . ./scripts/lib/sfdx.sh
+. ./scripts/lib/git.sh
 
 init_scratch_org () {
   alias=$1
@@ -27,4 +28,16 @@ convert_deploy_mdtapi () {
   deploy_mdtapi $1 $outputRoot $pkgName
 
   rm -rf $outputRoot
+}
+
+init_feature_branch () {
+  branchName=$(prompt_string "Enter Feature Name")
+  create_feature_branch $branchName
+}
+
+pull_and_commit () {
+  alias=$(prompt_string "Enter Scratch Org Name")
+  commitMessage=$(prompt_string "Enter Commit Message")
+  source_pull $alias
+  commit $commitMessage
 }
