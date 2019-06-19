@@ -42,11 +42,12 @@ assign_permset () {
 }
 
 convert_mdtapi () {
-  echo "Converting to mdapi package..."
-  outputRoot=${1:-mdtapi}
-  pkgName=${2:-unpackaged}
+  srcRoot=force-app/${1:-main}
+  outputRoot=${2:-mdtapi}
+  pkgName=${3:-unpackaged}
 
-  sfdx force:source:convert -d $outputRoot/$pkgName
+  echo "Converting $srcRoot to metadata in $outputRoot/$pkgName"
+  sfdx force:source:convert -r $srcRoot -d $outputRoot/$pkgName
 }
 
 deploy_mdtapi () {

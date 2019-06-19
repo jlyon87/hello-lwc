@@ -21,8 +21,9 @@ init_scratch_org () {
 convert_deploy_mdtapi () {
   outputRoot=${2:-mdtapi}
   pkgName=${3:-unpackaged}
+  srcRoot=${4:-main}
 
-  convert_mdtapi $outputRoot $pkgName
+  convert_mdtapi $srcRoot $outputRoot $pkgName
   deploy_mdtapi $1 $outputRoot $pkgName
 
   rm -rf $outputRoot
